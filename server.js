@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 
 const hostname = "127.0.0.1";
-const port = 3002;
+const port = 3003;
 
 const _products = [
   { id: 1, title: "iPad Pro", price: 500.01 },
