@@ -4,7 +4,7 @@ const app = express();
 
 app.use(cors());
 
-const hostname = "127.0.0.1";
+const hostname = "localhost";
 const port = 3001;
 
 const _products = [
@@ -27,6 +27,6 @@ app.post("/checkout", (req, res) => {
   });
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log(`Server is running at http://${hostname}:${port}/`);
 });
